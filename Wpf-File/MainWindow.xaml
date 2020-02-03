@@ -1,0 +1,28 @@
+﻿<Window x:Class="Wpf_File.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_File"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RichTextBox x:Name="rbtPride" HorizontalAlignment="Left" Height="290" Margin="29,26,0,0" VerticalAlignment="Top" Width="358">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnPride" Content="Populate Pride" HorizontalAlignment="Left" Margin="109,337,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click" Height="54" FontSize="24"/>
+        <RichTextBox x:Name="rbtPride_Copy" HorizontalAlignment="Left" Height="290" Margin="414,26,0,0" VerticalAlignment="Top" Width="350">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnPride_Copy" Content="Populate Pride" HorizontalAlignment="Left" Margin="499,337,0,0" VerticalAlignment="Top" Width="175" Height="54" FontSize="24" Click="BtnPride_Copy_Click"/>
+
+    </Grid>
+</Window>

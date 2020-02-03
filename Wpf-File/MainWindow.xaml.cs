@@ -23,6 +23,7 @@ namespace Wpf_File
     {
 
         private string book;
+        private string path;
         public MainWindow()
         {
             InitializeComponent();
@@ -47,6 +48,22 @@ namespace Wpf_File
             string path = Environment.GetEnvironmentVariable("USERPROFILE") + @"\Downloads\SalesJan2009.csv";
 
             var lines = File.ReadAllLines(path);
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                var line = lines[i];
+                1stCSV.item.Add(line);
+            }
+            //Splits CSV file on commas
+            var pieces = line.Split(',');
+
+            1stCSV.Items.Add(pieces[4] + "\t" + pieces[5]);
+
+
+            //foreach (var item in collection)
+            //{
+            //    1stCSV.item.Add(line);
+            //}
 
             //MessageBox
         }
